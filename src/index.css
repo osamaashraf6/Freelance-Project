@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #03045e;
+  font-size: 17px !important;
+}
+.heading-1 {
+  font-family: "Vampiro One", system-ui;
+}
+.container-nav {
+  width: 80%;
+  margin: 0 auto;
+}
+.container {
+  width: 74%;
+  margin: 0 auto;
+}
+.jockey-one-regular {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.linear-gradient-l {
+  background: linear-gradient(180deg, #55ffb8 0%, rgba(85, 255, 184, 0) 100%);
+}
+.linear-gradient-r {
+  background: linear-gradient(180deg, #b5f6ff 0%, rgba(181, 246, 255, 0) 100%);
+}
+.contentss > .subcontent:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Start swiper one */
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+swiper-container {
+  width: 100%;
+  height: 371px;
+  margin: 20px auto;
+}
+
+/* End swiper one */
