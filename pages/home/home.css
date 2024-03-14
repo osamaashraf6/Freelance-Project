@@ -9,10 +9,7 @@ body {
 .heading-1 {
   font-family: "Vampiro One", system-ui;
 }
-.container-nav {
-  width: 80%;
-  margin: 0 auto;
-}
+
 .container {
   width: 74%;
   margin: 0 auto;
