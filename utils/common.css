@@ -14,10 +14,6 @@
   --primry-color: #03045e;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-}
-
 .custom-container {
   padding-left: 10vw !important;
   padding-right: 10vw !important;

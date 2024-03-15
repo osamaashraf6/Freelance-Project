@@ -1,3 +1,7 @@
+.body {
+  font-family: "Poppins", sans-serif;
+}
+
 .header {
   margin: auto;
   text-align: center;
@@ -12,12 +16,18 @@
 
 .mentor-list {
   padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.mentor-list > div:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .mentor {
   display: flex;
-  gap: 8rem;
-  justify-content: space-between;
+  gap: 5rem;
 }
 
 .mentor h3 {
@@ -33,5 +43,20 @@
   list-style: none;
   display: flex;
   gap: 1.3rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 700px) {
+  .mentor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mentor .bio {
+    margin-left: 0;
+  }
+
+  .mentor-list > div:nth-child(even) {
+    flex-direction: column;
+  }
 }

@@ -1,3 +1,7 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .season-main {
   background: url("../../assets/season_main_bg.png");
   height: 40vh;
