@@ -10,8 +10,8 @@ body {
   font-family: "Vampiro One", system-ui;
 }
 
-.container {
-  width: 74%;
+.containerr {
+  width: 81%;
   margin: 0 auto;
 }
 .jockey-one-regular {
@@ -58,3 +58,27 @@ swiper-container {
 }
 
 /* End swiper one */
+.bg-custom-background {
+  background-image: url("/assets/Rectangle\ 80.png");
+  background-repeat: no-repeat;
+}
+
+.bg-img-blue {
+  background-image: url("/assets/Rectangle\ 260\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 32px;
+}
+.bg-img-blue259 {
+  background-image: url("/assets/Rectangle\ 259.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 32px;
+}
+
+.aaaa > swiper-slide {
+  margin-right: 12px;
+}
+.bbbb {
+  height: 298px;
+}
