@@ -76,12 +76,19 @@ swiper-container {
   background-position: 0 32px;
 }
 
-.aaaa > swiper-slide {
+.custom-swip-1 > swiper-slide {
   margin-right: 12px;
 }
-.bbbb {
+.custom-swip-2 {
   height: 298px;
 }
-.cccc {
+.custom-swip-3 {
   height: 468px;
+}
+
+.discover-link:hover .discover-dropdown {
+  visibility: visible;
+}
+.episode-link:hover .episode-dropdown {
+  visibility: visible;
 }
