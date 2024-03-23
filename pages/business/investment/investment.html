@@ -4,9 +4,261 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Investment Application</title>
+    <link rel="stylesheet" href="/utils/common.css" />
     <link rel="stylesheet" href="./investment.css" />
   </head>
   <body>
-    Investment Application
+    <!-- Start nav -->
+    <nav class="flex items-center h-[72px] pt-5">
+      <div class="container-nav">
+        <div class="parnav flex justify-between items-center">
+          <div class="brand flex justify-center items-center">
+            <a href="/pages/home/home.html"
+              ><img src="/assets/Group.png" alt="logoImg"
+            /></a>
+          </div>
+          <ul class="flex gap-5 items-center">
+            <li class="relative discover-link py-7">
+              <a href="" class="text-[#0F0F45]"
+                >Discover <i class="fas fa-angle-down"></i
+              ></a>
+              <ul
+                class="invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
+              >
+                <li class="border-b border-slate-100 pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Investment Opportunities</a>
+                </li>
+                <li class="border-b border-slate-100 pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Partnership Opportunities</a>
+                </li>
+                <li class="pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Business for Sale</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="" class="text-[#0F0F45]">How it Works</a></li>
+            <li>
+              <a href="" class="text-[#0F0F45]">Blog</a>
+            </li>
+            <li class="relative episode-link py-7">
+              <a href="/pages/episodes/episodes.html" class="text-[#0F0F45]"
+                >Episodes <i class="fas fa-angle-down"></i
+              ></a>
+              <ul
+                class="invisible absolute w-[286px] h-[125px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-24px] rounded flex flex-col gap-4 shadow-lg bg-white episode-dropdown"
+              >
+                <li class="border-b border-slate-100 pb-2">
+                  <a href="" class="text-[18px]">Season 1</a>
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-[18px]">Season 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="text-[#0F0F45]">About Us</a>
+            </li>
+            <li>
+              <a href="/pages/mentors/mentors.html" class="text-[#0F0F45]"
+                >Mentors</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#0F0F45]">Login</a>
+            </li>
+          </ul>
+          <div class="user flex items-center gap-4">
+            <button
+              class="bg-[#55FFB8] px-8 py-1.5 text-[#03045E] font-bold border-2 border-[#03045E]"
+            >
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start section multi step form -->
+    <section class="flex flex-col items-center py-12">
+      <div class="container w-[52vw]">
+        <!-- Start common heading -->
+        <div class="text-center">
+          <h1 class="text-[#020330] text-[32px] font-bold">
+            Business Application
+          </h1>
+          <p class="text-[18px]">
+            Recieve investments to help scale your projects with bbshark
+          </p>
+        </div>
+        <!-- End common heading -->
+
+        <div class="form-outer">
+          <!-- Start stepper -->
+          <div class="flex justify-center items-center relative">
+            <div
+              class="progress-bar border-2 border-slate-100 rounded-full p-[10px] pt-[14px] w-[31%]"
+            >
+              <div class="step">
+                <div class="bullet">
+                  
+                </div>
+              </div>
+              <div class="step">
+                <div class="bullet">
+                </div>
+              </div>
+              <div class="step">
+                <div class="bullet">
+                </div>
+              </div>
+              <div class="step">
+                <div class="bullet">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End stepper -->
+
+          <form action="#">
+            <!-- Start page 1 -->
+            <div class="page slide-page">
+              <div class="flex justify-center">
+                <h2 class="flex items-center font-bold gap-2 text-2xl">
+                  <span
+                    ><svg
+                      width="31"
+                      height="30"
+                      viewBox="0 0 31 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.3333 8.75C10.3333 7.42392 10.8777 6.15215 11.8466 5.21447C12.8156 4.27678 14.1297 3.75 15.5 3.75C16.8703 3.75 18.1844 4.27678 19.1534 5.21447C20.1223 6.15215 20.6667 7.42392 20.6667 8.75C20.6667 10.0761 20.1223 11.3479 19.1534 12.2855C18.1844 13.2232 16.8703 13.75 15.5 13.75C14.1297 13.75 12.8156 13.2232 11.8466 12.2855C10.8777 11.3479 10.3333 10.0761 10.3333 8.75ZM10.3333 16.25C8.62048 16.25 6.97777 16.9085 5.7666 18.0806C4.55543 19.2527 3.875 20.8424 3.875 22.5C3.875 23.4946 4.28326 24.4484 5.00996 25.1517C5.73666 25.8549 6.72229 26.25 7.75 26.25H23.25C24.2777 26.25 25.2633 25.8549 25.99 25.1517C26.7167 24.4484 27.125 23.4946 27.125 22.5C27.125 20.8424 26.4446 19.2527 25.2334 18.0806C24.0222 16.9085 22.3795 16.25 20.6667 16.25H10.3333Z"
+                        fill="#020330"
+                      />
+                    </svg>
+                  </span>
+                  Personal Information
+                </h2>
+              </div>
+              <div class="field">
+                <div class="label">First Name</div>
+                <input type="text" class="w-full" />
+              </div>
+              <div class="field">
+                <div class="label">Last Name</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">Phone Number</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">Email</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">Age</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">Gender</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">City</div>
+                <input type="text" />
+              </div>
+              <div class="field flex justify-end">
+                <button class="firstNext next">Next</button>
+              </div>
+            </div>
+            <!-- End page 1 -->
+            <!-- Start page 2 -->
+            <div class="page">
+              <div class="title">Contact Info:</div>
+              <div class="field">
+                <div class="label">Email Address</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">Phone Number</div>
+                <input type="Number" />
+              </div>
+              <div class="field btns justify-end">
+              
+
+                <button
+                  class="prev-1 prev absolute top-[-741%] left-[23%] text-2xl font-bold border-2 border-[#eee] pt-[9px] pr-[10px] pb-[7px] pl-[17px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
+                >
+                  < Go Back
+                </button>
+                <button class="next-1 next">Next</button>
+              </div>
+            </div>
+            <!-- End page 2 -->
+            <!-- Start page 3 -->
+
+            <div class="page">
+              <div class="title">Date of Birth:</div>
+              <div class="field">
+                <div class="label">Date</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">Gender</div>
+                <select>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field btns justify-end">
+                <button
+                  class="prev-2 prev absolute top-[-741%] left-[23%] text-2xl font-bold border-2 border-[#eee] pt-[9px] pr-[10px] pb-[7px] pl-[17px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
+                >
+                  Go Back
+                </button>
+                <button class="next-2 next">Next</button>
+              </div>
+            </div>
+            <!-- End page 3 -->
+            <!-- Start page 4 -->
+
+            <div class="page">
+              <div class="title">Login Details:</div>
+              <div class="field">
+                <div class="label">Username</div>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <div class="label">Password</div>
+                <input type="password" />
+              </div>
+              <div class="field btns justify-end">
+                <button
+                  class="prev-3 prev absolute top-[-741%] left-[23%] text-2xl font-bold border-2 border-[#eee] pt-[9px] pr-[10px] pb-[7px] pl-[17px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
+                >
+                  Go Back
+                </button>
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+            <!-- End page 4 -->
+          </form>
+        </div>
+      </div>
+      <!--  -->
+    </section>
+    <!-- Start js scripts -->
+    <script
+      src="https://kit.fontawesome.com/7280065e63.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/swipper.js"></script>
   </body>
 </html>

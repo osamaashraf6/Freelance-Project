@@ -1,24 +1,41 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Start universal styles */
 
 body {
   color: #03045e;
   font-size: 17px !important;
 }
-.heading-1 {
-  font-family: "Vampiro One", system-ui;
-}
+/* Start common styles */
 
-.containerr {
-  width: 81%;
-  margin: 0 auto;
-}
 .jockey-one-regular {
   font-family: "Jockey One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+.heading-1 {
+  font-family: "Vampiro One", system-ui;
+}
+
+/* Start Custom swiper in Home page */
+.custom-swip-1 > swiper-slide {
+  margin-right: 12px;
+}
+.custom-swip-2 {
+  height: 298px;
+}
+.custom-swip-3 {
+  height: 468px;
+}
+
+/* Start dropdown menu */
+.discover-link:hover .discover-dropdown {
+  visibility: visible;
+}
+.episode-link:hover .episode-dropdown {
+  visibility: visible;
+}
+
+/*  */
+
 .linear-gradient-l {
   background: linear-gradient(180deg, #55ffb8 0%, rgba(85, 255, 184, 0) 100%);
 }
@@ -29,35 +46,8 @@ body {
   flex-direction: row-reverse;
 }
 
-/* Start swiper one */
-swiper-container {
-  width: 100%;
-  height: 100%;
-}
+/* Start bg image */
 
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-swiper-container {
-  width: 100%;
-  height: 371px;
-  margin: 20px auto;
-}
-
-/* End swiper one */
 .bg-custom-background {
   background-image: url("/assets/Rectangle\ 80.png");
   background-repeat: no-repeat;
@@ -74,21 +64,4 @@ swiper-container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 32px;
-}
-
-.custom-swip-1 > swiper-slide {
-  margin-right: 12px;
-}
-.custom-swip-2 {
-  height: 298px;
-}
-.custom-swip-3 {
-  height: 468px;
-}
-
-.discover-link:hover .discover-dropdown {
-  visibility: visible;
-}
-.episode-link:hover .episode-dropdown {
-  visibility: visible;
 }
