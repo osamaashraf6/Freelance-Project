@@ -1,0 +1,18 @@
+.service-header {
+  background: url("/assets/service-bg.png");
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.jockey-heading {
+  font-family: "Jockey One", sans-serif;
+  font-size: 42px;
+  line-height: 46px;
+}
+
+.test {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 31% 74%, 31% 100%, 0 66%, 0 65%);
+}
