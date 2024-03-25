@@ -23,7 +23,7 @@
                 >Discover <i class="fas fa-angle-down"></i
               ></a>
               <ul
-                class="invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
+                class="invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown z-50"
               >
                 <li class="border-b border-slate-100 pb-2 w-[94%]">
                   <a href="" class="text-[18px]">Investment Opportunities</a>
@@ -80,13 +80,13 @@
 
     <!-- Start section multi step form -->
     <section class="flex flex-col items-center py-12">
-      <div class="container w-[52vw]">
+      <div class="container w-[64vw]">
         <!-- Start common heading -->
-        <div class="text-center">
+        <div class="business-heading text-center">
           <h1 class="text-[#020330] text-[32px] font-bold">
             Business Application
           </h1>
-          <p class="text-[18px]">
+          <p class="text-[18px] mb-5">
             Recieve investments to help scale your projects with bbshark
           </p>
         </div>
@@ -96,24 +96,19 @@
           <!-- Start stepper -->
           <div class="flex justify-center items-center relative">
             <div
-              class="progress-bar border-2 border-slate-100 rounded-full p-[10px] pt-[14px] w-[31%]"
+              class="progress-bar relative left-[8%] border-2 border-slate-100 rounded-full w-fit h-[66px] px-10 flex items-center justify-center"
             >
               <div class="step">
-                <div class="bullet">
-                  
-                </div>
+                <div class="bullet"></div>
               </div>
               <div class="step">
-                <div class="bullet">
-                </div>
+                <div class="bullet"></div>
               </div>
               <div class="step">
-                <div class="bullet">
-                </div>
+                <div class="bullet"></div>
               </div>
               <div class="step">
-                <div class="bullet">
-                </div>
+                <div class="bullet"></div>
               </div>
             </div>
           </div>
@@ -145,109 +140,409 @@
               </div>
               <div class="field">
                 <div class="label">First Name</div>
-                <input type="text" class="w-full" />
+                <input type="text" class="w-full" placeholder="First name" />
               </div>
               <div class="field">
                 <div class="label">Last Name</div>
-                <input type="text" />
+                <input type="text" placeholder="Last name" />
               </div>
               <div class="field">
                 <div class="label">Phone Number</div>
-                <input type="text" />
+                <input type="text" placeholder="Phone Number" />
               </div>
               <div class="field">
                 <div class="label">Email</div>
-                <input type="text" />
+                <input type="text" placeholder="Email" />
               </div>
               <div class="field">
                 <div class="label">Age</div>
-                <input type="text" />
+                <input type="text" placeholder="Age" />
               </div>
               <div class="field">
                 <div class="label">Gender</div>
-                <input type="text" />
+                <input type="text" placeholder="Gender" />
               </div>
               <div class="field">
                 <div class="label">City</div>
-                <input type="text" />
+                <input type="text" placeholder="City" />
               </div>
               <div class="field flex justify-end">
-                <button class="firstNext next">Next</button>
+                <button class="firstNext next flex justify-center items-center">
+                  Next <span class="text-[35px] pb-[5px]"> &rarr;</span>
+                </button>
               </div>
             </div>
             <!-- End page 1 -->
+
             <!-- Start page 2 -->
-            <div class="page">
-              <div class="title">Contact Info:</div>
-              <div class="field">
-                <div class="label">Email Address</div>
-                <input type="text" />
+            <div class="page page-2">
+              <div
+                class="bi-title gap-5 text-[25px] absolute top-[32.5%] left-[50%] translate-x-[-50%] translate-y-[-50%] font-bold mb-[16px]"
+              >
+                <img src="/assets/icons/shopping.svg" alt="" />
+                Business Information
               </div>
-              <div class="field">
-                <div class="label">Phone Number</div>
-                <input type="Number" />
+              <h3 class="title">Product or Service?</h3>
+              <div class="py-5">
+                <div class="flex gap-5 py-3">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Product</label>
+                </div>
+                <div class="flex gap-5 py-3">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Service</label>
+                </div>
+              </div>
+              <h3 class="title pb-7">
+                Which category best describes your Business?
+              </h3>
+              <div class="flex flex-wrap">
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Food & Beverage</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Technology</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">App/ Website</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]"
+                    >Housewares/ Home Design</label
+                  >
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]"
+                    >Health/ Wellness/ Nutrition</label
+                  >
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Fitness</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Sports</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Beauty</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Clothing/ Fashion</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Toys/ Games</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Pets</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]"
+                    >Entertainment/ Experiment</label
+                  >
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Holiday</label>
+                </div>
+                <div class="flex gap-5 py-2 w-2/4 pb-5">
+                  <input type="radio" class="w-[19px]" />
+                  <label for="" class="text-[18px]">Other</label>
+                  <input
+                    type="text"
+                    placeholder="Please Specify"
+                    class="border-2 border-slate-200 rounded px-4 py-2 w-[71%]"
+                  />
+                </div>
               </div>
               <div class="field btns justify-end">
-              
-
                 <button
-                  class="prev-1 prev absolute top-[-741%] left-[23%] text-2xl font-bold border-2 border-[#eee] pt-[9px] pr-[10px] pb-[7px] pl-[17px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
+                  class="prev-1 prev flex items-center gap-4 absolute top-[-1727%] left-[27%] text-2xl font-bold border-2 border-[#eee] h-[66px] w-[196px] pl-[36px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
                 >
-                  < Go Back
+                  <img src="/assets/icons/left-angle.svg" alt="" /> Go Back
                 </button>
-                <button class="next-1 next">Next</button>
+                <button class="next-1 next flex justify-center items-center">
+                  Next <span class="text-[35px] pb-[5px]">&rarr;</span>
+                </button>
               </div>
             </div>
             <!-- End page 2 -->
             <!-- Start page 3 -->
 
-            <div class="page">
-              <div class="title">Date of Birth:</div>
-              <div class="field">
-                <div class="label">Date</div>
-                <input type="text" />
+            <div class="page page-3 flex flex-col gap-5">
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >Annual Revenue</label
+                >
+                <input
+                  type="text"
+                  placeholder="e.g 500 000 egp"
+                  class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
               </div>
-              <div class="field">
-                <div class="label">Gender</div>
-                <select>
-                  <option>Male</option>
-                  <option>Female</option>
-                  <option>Other</option>
-                </select>
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >Number of Years Company has been operating</label
+                >
+                <input
+                  type="text"
+                  placeholder="Number of years company has been operating"
+                  class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
               </div>
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >Number of Employees in Your Company
+                </label>
+                <input
+                  type="text"
+                  placeholder="e.g 5"
+                  class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
+              </div>
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >Are you applying with any collaborators</label
+                >
+                <textarea
+                  type="text"
+                  placeholder="filler text"
+                  class="w-full h-[119px] border-2 border-slate-100 rounded pl-[15px] text-[18px] pt-5"
+                ></textarea>
+              </div>
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >How much money would you like to ask for to grow your
+                  business</label
+                >
+                <input
+                  type="text"
+                  placeholder="10 million egp"
+                  class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
+              </div>
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >How much equity in exchange of the required investment are
+                  willing to offer the shark?</label
+                >
+                <input
+                  type="text"
+                  placeholder="e.g 5 %"
+                  class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
+              </div>
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >Please provide a brief non-confidential description of your
+                  business or product.</label
+                >
+                <textarea
+                  type="text"
+                  placeholder="filler text"
+                  class="w-full h-[119px] border-2 border-slate-100 rounded pl-[15px] text-[18px] pt-5"
+                ></textarea>
+              </div>
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px]"
+                  >Please upload a photo of your business or product if
+                  available (.jpg)</label
+                >
+                <div class="flex h-[50px]">
+                  <label
+                    class="w-[40%] h-full border-2 flex items-center border-slate-100 rounded pl-[15px] text-[18px] text-slate-300"
+                    for="file"
+                    >Choose File</label
+                  >
+                  <input
+                    type="file"
+                    placeholder="Choose File"
+                    class="hidden"
+                    id="file"
+                  />
+                  <button
+                    class="w-[20%] h-full text-[18px] bg-[#55FFB8] font-bold text-[#03045E]"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </div>
+
               <div class="field btns justify-end">
                 <button
-                  class="prev-2 prev absolute top-[-741%] left-[23%] text-2xl font-bold border-2 border-[#eee] pt-[9px] pr-[10px] pb-[7px] pl-[17px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
+                  class="prev-2 prev flex items-center gap-4 absolute top-[-2816%] left-[27%] text-2xl font-bold border-2 border-[#eee] h-[66px] w-[196px] pl-[36px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
                 >
-                  Go Back
+                  <img src="/assets/icons/left-angle.svg" alt="" /> Go Back
                 </button>
-                <button class="next-2 next">Next</button>
+                <button class="next-2 next flex justify-center items-center">
+                  Next <span class="text-[35px] pb-[5px]">&rarr;</span>
+                </button>
               </div>
             </div>
             <!-- End page 3 -->
             <!-- Start page 4 -->
 
-            <div class="page">
-              <div class="title">Login Details:</div>
-              <div class="field">
-                <div class="label">Username</div>
-                <input type="text" />
+            <div class="page flex flex-col gap-5">
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px] leading-8">
+                  Upload a new elevator pitch video of you in *Arabic * not
+                  longer than 2 mins. We want to get sense of who you are and
+                  what your company's all about before we meet you at
+                  auditions!</label
+                >
+                <input
+                  type="text"
+                  placeholder="add link to youtube, vimeo or dropbox"
+                  class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
               </div>
-              <div class="field">
-                <div class="label">Password</div>
-                <input type="password" />
+              <div class="">
+                <label class="text-[24px] font-bold block mb-[16px] leading-8">
+                  How did you hear about us?</label
+                >
+                <input
+                  type="text"
+                  placeholder="how did you hear about us?"
+                  class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
+                <div class="pl-[29px] flex gap-2 pt-4">
+                  <input type="checkbox" class="w-[21px]" />
+                  <label for="" class="text-xl"
+                    >I agree to BabySharks
+                    <span class="underline">Terms & Conditions</span></label
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <label class="text-[24px] font-bold block mb-[16px] leading-8">
+                  Digital Signature</label
+                >
+                <input
+                  type="text"
+                  placeholder=""
+                  class="w-[30%] h-[60px] border-2 border-slate-100 rounded pl-[15px] text-[18px] mb-14"
+                />
+                <input
+                  type="text"
+                  placeholder=""
+                  class="w-[30%] h-[60px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+                />
+              </div>
+              <div class="flex flex-col">
+                <h3 class="text-[24px] font-bold block mb-[16px] leading-8">
+                  Welcome to BabySharks Application.
+                </h3>
+                <p class="text-[18px]">
+                  Dui tempus in pellentesque maecenas et nunc integer iaculis a.
+                  Risus eget sed nunc lorem sed et. Velit in sed convallis id
+                  sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper tellus
+                  auctor enim diam. Risus eget sed as et nunc integer iaculis a.
+                  Risus eget sed nunc lorem sed et. Velit in sed convallis id
+                  sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper
+                </p>
+                <ul class="flex flex-col gap-5 py-5">
+                  <li class="flex gap-5 text-[18px] font-semibold">
+                    <span
+                      class="w-[22px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
+                      ><i class="fas fa-check"></i
+                    ></span>
+                    You must be 18 years of age or older.
+                  </li>
+                  <li class="flex gap-5 text-[18px] font-semibold">
+                    <span
+                      class="w-[22px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
+                      ><i class="fas fa-check"></i
+                    ></span>
+                    You must be legally present in egypt during the shooting of
+                    the episode
+                  </li>
+                  <li class="flex gap-5 text-[18px] font-semibold">
+                    <span
+                      class="w-[71px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
+                      ><i class="fas fa-check"></i
+                    ></span>
+                    <span>
+                      Neither you, an immediate member of your family, any of
+                      your employees, or anyone living in your house can have
+                      worked on IMP, Sony Pictures Television. marketing or
+                      branding Dui tempus in pellentesque maecenas et nunc
+                      integer iaculis a. Risus eget sed nunc lorem sed et. Velit
+                      in sed convallis id sapien. Ipsum nulla mauris aliquet
+                      lectus. Ullamcorper tellus auctor enim diam.</span
+                    >
+                  </li>
+                  <li class="flex gap-5 text-[18px] font-semibold">
+                    <span
+                      class="w-[22px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
+                      ><i class="fas fa-check"></i
+                    ></span>
+                    You were not implicated in any crimes in the past 10 years
+                    (That were not absolved)
+                  </li>
+                </ul>
+                <p class="text-[18px] pb-3">
+                  Dui tempus in pellentesque maecenas et nunc integer iaculis a.
+                  Risus eget sed nunc lorem sed et. Velit in sed convallis id
+                  sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper tellus
+                  auctor enim diam.
+                </p>
+                <p class="text-[18px]">
+                  Dui tempus in pellentesque maecenas et nunc integer iaculis a.
+                  Risus eget sed nunc lorem sed et. Velit in sed convallis id
+                  sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper tellus
+                  auctor enim diam.
+                </p>
               </div>
               <div class="field btns justify-end">
                 <button
-                  class="prev-3 prev absolute top-[-741%] left-[23%] text-2xl font-bold border-2 border-[#eee] pt-[9px] pr-[10px] pb-[7px] pl-[17px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
+                  class="prev-3 prev flex items-center gap-4 absolute top-[-2816%] left-[27%] text-2xl font-bold border-2 border-[#eee] h-[66px] w-[196px] pl-[36px] rounded-full border-r-0 rounded-tr-none rounded-br-none"
                 >
-                  Go Back
+                  <img src="/assets/icons/left-angle.svg" alt="" /> Go Back
                 </button>
-                <button class="submit">Submit</button>
+                <div class="flex justify-center w-full">
+                  <button class="submit w-[400px] h-[59px] jockey-one-regular">
+                    Submit
+                  </button>
+                </div>
               </div>
             </div>
-            <!-- End page 4 -->
+            <!-- Start page 5 popup -->
+            <!-- End page 5 -->
           </form>
+        </div>
+        <div
+          class="popup hidden absolute text-center text-[#0F0F45] w-[1045px] h-[530px] shadow-lg p-7 left-[15%] flex-col gap-2"
+        >
+          <div class="text-right">
+            <button class="text-5xl">&times;</button>
+          </div>
+          <div class="flex items-center justify-center gap-2 h-[156px]">
+            <img src="/assets/icons/congrats.svg" alt="" />
+            <h1 class="jockey-one-regular text-[96px]">Huzzah!</h1>
+          </div>
+          <h3 class="jockey-one-regular text-[36px]">
+            Thank you for your submission
+          </h3>
+          <p class="text-2xl">
+            we will review your application and update you in 4-7 business days
+          </p>
+          <div class="m-auto">
+            <a
+              href="/pages/home/home.html"
+              class="jockey-one-regular text-[32px] w-[440px] h-[65px] p-2 bg-[#0F0F45] text-white block"
+              >Go to Home
+            </a>
+          </div>
         </div>
       </div>
       <!--  -->

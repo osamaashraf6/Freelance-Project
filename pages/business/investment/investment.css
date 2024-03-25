@@ -6,6 +6,12 @@
   visibility: visible;
 }
 
+/*  */
+.jockey-one-regular {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* Start multi step form */
 
 .container .form-outer {
@@ -50,12 +56,14 @@ form .page .field select {
   font-size: 17px;
   font-weight: 500;
 }
+form .page .field .next {
+  width: 192px;
+  height: 52px;
+}
 form .page .field .next,
 form .page .field .submit {
-  width: 20%;
-  height: 42px;
   border: none;
-  background: #d33f8d;
+  background: rgba(3, 4, 94, 1);
   margin-top: -20px;
   color: #fff;
   cursor: pointer;
@@ -86,7 +94,7 @@ form .page .btns button.next {
 }
 .container .progress-bar .step {
   text-align: center;
-  width: 100%;
+  width: 34px;
   position: relative;
 }
 
@@ -103,8 +111,8 @@ form .page .btns button.next {
   line-height: 25px;
 }
 .progress-bar .step .bullet.active {
-  border-color: #d43f8d;
-  background: #d43f8d;
+  border-color: #80e580;
+  background: #80e580;
 }
 
 .progress-bar .step .bullet:before,
@@ -112,13 +120,13 @@ form .page .btns button.next {
   position: absolute;
   content: "";
   bottom: 3px;
-  right: -46px;
+  right: -24px;
   height: 3px;
-  width: 45px;
+  width: 24px;
   background: #262626;
 }
 .progress-bar .step .bullet.active:after {
-  background: #d43f8d;
+  background: #80e580;
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 0.3s linear forwards;
@@ -131,8 +139,4 @@ form .page .btns button.next {
 .progress-bar .step:last-child .bullet:before,
 .progress-bar .step:last-child .bullet:after {
   display: none;
-}
-.progress-bar .step p.active {
-  color: #d43f8d;
-  transition: 0.2s linear;
 }
