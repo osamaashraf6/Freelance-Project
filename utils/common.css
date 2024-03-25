@@ -63,3 +63,11 @@ swiper-container {
   height: 371px;
   margin: 20px auto;
 }
+
+/* Start dropdown menu */
+.discover-link:hover .discover-dropdown {
+  visibility: visible;
+}
+.episode-link:hover .episode-dropdown {
+  visibility: visible;
+}

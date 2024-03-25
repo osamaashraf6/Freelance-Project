@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="/utils/common.css" />
+  </head>
+  <body>
+    <!-- Start nav -->
+    <nav class="flex items-center h-[72px] pt-5">
+      <div class="container-nav">
+        <div class="parnav flex justify-between items-center">
+          <div class="brand flex justify-center items-center">
+            <a href="/pages/home/home.html"
+              ><img src="/assets/Group.png" alt="logoImg"
+            /></a>
+          </div>
+          <ul class="flex gap-5 items-center">
+            <li class="relative discover-link py-7">
+              <a href="" class="text-[#0F0F45]"
+                >Discover <i class="fas fa-angle-down"></i
+              ></a>
+              <ul
+                class="invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
+              >
+                <li class="border-b border-slate-100 pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Investment Opportunities</a>
+                </li>
+                <li class="border-b border-slate-100 pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Partnership Opportunities</a>
+                </li>
+                <li class="pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Business for Sale</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="" class="text-[#0F0F45]">Our story</a></li>
+            <li>
+              <a href="/pages/mentors/mentors.html" class="text-[#0F0F45]"
+                >Mentors</a
+              >
+            </li>
+            <li class="relative episode-link py-7">
+              <a href="/pages/episodes/episodes.html" class="text-[#0F0F45]"
+                >Episodes <i class="fas fa-angle-down"></i
+              ></a>
+              <ul
+                class="invisible absolute w-[286px] h-[125px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-24px] rounded flex flex-col gap-4 shadow-lg bg-white episode-dropdown"
+              >
+                <li class="border-b border-slate-100 pb-2">
+                  <a href="" class="text-[18px]">Season 1</a>
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-[18px]">Season 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/pages/podcasts/podcasts.html" class="text-[#0F0F45]"
+                >Podcasts</a
+              >
+            </li>
+            <li><a href="" class="text-[#0F0F45]">Our Services</a></li>
+          </ul>
+          <div class="user flex items-center gap-4">
+            <button class="border-2 border-[#03045E] px-8 py-1 font-bold">
+              Login
+            </button>
+            <button class="bg-[#03045E] px-8 py-1.5 text-white font-bold">
+              Apply Now
+            </button>
+            <div class="responsive-country">
+              <img src="/assets/emojione_flag-for-egypt.png" alt="countryImg" />
+            </div>
+            <span class="underline">AR</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="custom-container grid grid-cols-1 md:grid-cols-2 gap-24 pt-12"
+    >
+      <div class="flex flex-col gap-5">
+        <h1 class="contact-heading1">
+          Our team is here for you, Get in touch with an Expert!
+        </h1>
+        <p>
+          Have any questions about business or investment ? send us a message
+          and our team will answer you
+        </p>
+
+        <button class="whatsapp-btn w-full md:w-3/5">
+          <img src="/assets/icons/whatsapp.svg" alt="whatsapp" />
+          <span>Send us a Message on Whatsapp</span>
+        </button>
+      </div>
+      <div>
+        <h2 class="contact-heading2 pb-5">Send Us an Email</h2>
+        <form class="flex flex-col gap-5">
+          <div class="flex flex-col gap-2">
+            <label for="name">Name</label>
+            <input id="name" placeholder="Name" class="form-field" />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="email">Email</label>
+            <input id="email" placeholder="Email" class="form-field" />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="email">What Can we help you with</label>
+            <textarea
+              id="email"
+              placeholder="Send us a message"
+              class="form-field"
+              rows="5"
+            ></textarea>
+          </div>
+          <div>
+            <button class="dark-btn px-20" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/7280065e63.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
