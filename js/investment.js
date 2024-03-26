@@ -12,9 +12,8 @@ const businessHeading = document.querySelector(".business-heading");
 const formOuter = document.querySelector(".form-outer");
 const popup = document.querySelector(".popup");
 const biTitle = document.querySelector(".bi-title");
-const prevv = document.querySelector(".prevv");
-const nextt = document.querySelector(".nextt");
 const form = document.querySelector("form");
+
 let current = 1;
 
 nextBtnFirst.addEventListener("click", function (event) {
@@ -41,7 +40,7 @@ nextBtnSec.addEventListener("click", function (event) {
   bullet[current - 1].classList.add("active");
   progressBar.style.left = "8%";
   biTitle.style.display = "flex";
-  form.style.height = "fit-content";
+  form.style.height = "181vh";
 
   current += 1;
 });
@@ -55,28 +54,9 @@ nextBtnThird.addEventListener("click", function (event) {
   bullet[current - 1].classList.add("active");
   progressBar.style.left = "8%";
   biTitle.style.display = "flex";
-  form.style.height = "144vh";
 
   current += 1;
 });
-//
-
-nextt.addEventListener("click", function (event) {
-  event.preventDefault();
-  slidePage.style.marginLeft = "-100%";
-  bullet[2].style.width = "16px"; //
-  bullet[2].style.height = "17px"; //
-  bullet[1].style.width = "12px"; //
-  bullet[1].style.height = "12px"; //
-  bullet[current - 1].classList.add("active");
-  progressBar.style.left = "8%";
-  biTitle.style.display = "flex";
-  form.style.height = "182vh";
-
-  current += 1;
-});
-
-//
 submitBtn.addEventListener("click", function () {
   bullet[3].style.width = "16px"; //
   bullet[3].style.height = "17px"; //
@@ -124,23 +104,9 @@ prevBtnThird.addEventListener("click", function (event) {
 
   current -= 1;
 });
-//
-prevv.addEventListener("click", function (event) {
-  event.preventDefault();
-  slidePage.style.marginLeft = "-50%";
-  bullet[1].style.width = "16px"; //
-  bullet[1].style.height = "17px"; //
-  bullet[2].style.width = "12px"; //
-  bullet[2].style.height = "12px"; //
-  bullet[current - 2].classList.remove("active");
-  biTitle.style.display = "flex";
-
-  current -= 1;
-});
-//
 prevBtnFourth.addEventListener("click", function (event) {
   event.preventDefault();
-  slidePage.style.marginLeft = "-75%";
+  slidePage.style.marginLeft = "-50%";
   bullet[1].style.width = "16px"; //
   bullet[1].style.height = "17px"; //
   bullet[2].style.width = "12px"; //
