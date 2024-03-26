@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="inv.css" />
+  <link rel="stylesheet" href="/utils/common.css" />
+  <body>
+    <!-- Start nav -->
+    <nav class="flex items-center h-[72px] pt-5">
+      <div class="container-nav">
+        <div class="parnav flex justify-between items-center">
+          <div class="brand flex justify-center items-center">
+            <a href="/pages/home/home.html"
+              ><img src="/assets/Group.png" alt="logoImg"
+            /></a>
+          </div>
+          <ul class="flex gap-5 items-center">
+            <li class="relative discover-link py-7">
+              <a href="" class="text-[#0F0F45]"
+                >Discover <i class="fas fa-angle-down"></i
+              ></a>
+              <ul
+                class="invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
+              >
+                <li class="border-b border-slate-100 pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Investment Opportunities</a>
+                </li>
+                <li class="border-b border-slate-100 pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Partnership Opportunities</a>
+                </li>
+                <li class="pb-2 w-[94%]">
+                  <a href="" class="text-[18px]">Business for Sale</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="" class="text-[#0F0F45]">Our story</a></li>
+            <li>
+              <a href="/pages/mentors/mentors.html" class="text-[#0F0F45]"
+                >Mentors</a
+              >
+            </li>
+            <li class="relative episode-link py-7">
+              <a href="/pages/episodes/episodes.html" class="text-[#0F0F45]"
+                >Episodes <i class="fas fa-angle-down"></i
+              ></a>
+              <ul
+                class="invisible absolute w-[286px] h-[125px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-24px] rounded flex flex-col gap-4 shadow-lg bg-white episode-dropdown"
+              >
+                <li class="border-b border-slate-100 pb-2">
+                  <a href="" class="text-[18px]">Season 1</a>
+                </li>
+                <li class="pb-2">
+                  <a href="" class="text-[18px]">Season 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/pages/podcasts/podcasts.html" class="text-[#0F0F45]"
+                >Podcasts</a
+              >
+            </li>
+            <li><a href="" class="text-[#0F0F45]">Our Services</a></li>
+          </ul>
+          <div class="user flex items-center gap-4">
+            <button class="border-2 border-[#03045E] px-8 py-1 font-bold">
+              Login
+            </button>
+            <button class="bg-[#03045E] px-8 py-1.5 text-white font-bold">
+              Apply Now
+            </button>
+            <div class="responsive-country">
+              <img src="/assets/emojione_flag-for-egypt.png" alt="countryImg" />
+            </div>
+            <span class="underline">AR</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start common heading -->
+    <div class="pt-12 text-center">
+      <h1 class="text-[#020330] text-[32px] font-bold">Business Application</h1>
+      <p class="text-[18px] mb-5">
+        Recieve investments to help scale your projects with bbshark
+      </p>
+    </div>
+
+    <form id="regForm" class="relative" action="/action_page.php">
+      <!-- Circles which indicates the steps of the form: -->
+      <div
+        class="absolute left-[50%] translate-x-[-50%] flex w-fit items-center justify-center gap-5 rounded-full border-2 border-[#eee] p-4"
+      >
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+          <img src="/assets/icons/left-angle.svg" width="15px" alt="" />
+          <span>Go Back</span>
+        </button>
+        <div class="flex items-center gap-1">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </div>
+      <div class="mt-20"></div>
+      <!-- One "tab" for each step in the form: -->
+      <div class="tab">
+        <div class="flex justify-center">
+          <h2 class="flex items-center font-bold gap-2 text-2xl">
+            <span
+              ><svg
+                width="31"
+                height="30"
+                viewBox="0 0 31 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.3333 8.75C10.3333 7.42392 10.8777 6.15215 11.8466 5.21447C12.8156 4.27678 14.1297 3.75 15.5 3.75C16.8703 3.75 18.1844 4.27678 19.1534 5.21447C20.1223 6.15215 20.6667 7.42392 20.6667 8.75C20.6667 10.0761 20.1223 11.3479 19.1534 12.2855C18.1844 13.2232 16.8703 13.75 15.5 13.75C14.1297 13.75 12.8156 13.2232 11.8466 12.2855C10.8777 11.3479 10.3333 10.0761 10.3333 8.75ZM10.3333 16.25C8.62048 16.25 6.97777 16.9085 5.7666 18.0806C4.55543 19.2527 3.875 20.8424 3.875 22.5C3.875 23.4946 4.28326 24.4484 5.00996 25.1517C5.73666 25.8549 6.72229 26.25 7.75 26.25H23.25C24.2777 26.25 25.2633 25.8549 25.99 25.1517C26.7167 24.4484 27.125 23.4946 27.125 22.5C27.125 20.8424 26.4446 19.2527 25.2334 18.0806C24.0222 16.9085 22.3795 16.25 20.6667 16.25H10.3333Z"
+                  fill="#020330"
+                />
+              </svg>
+            </span>
+            Personal Information
+          </h2>
+        </div>
+        <div class="field">
+          <div class="label">First Name</div>
+          <input type="text" class="w-full" placeholder="First name" />
+        </div>
+        <div class="field">
+          <div class="label">Last Name</div>
+          <input type="text" placeholder="Last name" />
+        </div>
+        <div class="field">
+          <div class="label">Phone Number</div>
+          <input type="text" placeholder="Phone Number" />
+        </div>
+        <div class="field">
+          <div class="label">Email</div>
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="field">
+          <div class="label">Age</div>
+          <input type="text" placeholder="Age" />
+        </div>
+        <div class="field">
+          <div class="label">Gender</div>
+          <input type="text" placeholder="Gender" />
+        </div>
+        <div class="field">
+          <div class="label">City</div>
+          <input type="text" placeholder="City" />
+        </div>
+      </div>
+      <div class="tab">
+        Contact Info:
+        <p>
+          <input
+            placeholder="E-mail..."
+            oninput="this.className = ''"
+            name="email"
+          />
+        </p>
+        <p>
+          <input
+            placeholder="Phone..."
+            oninput="this.className = ''"
+            name="phone"
+          />
+        </p>
+      </div>
+      <div class="tab">
+        Birthday:
+        <p>
+          <input placeholder="dd" oninput="this.className = ''" name="dd" />
+        </p>
+        <p>
+          <input placeholder="mm" oninput="this.className = ''" name="nn" />
+        </p>
+        <p>
+          <input placeholder="yyyy" oninput="this.className = ''" name="yyyy" />
+        </p>
+      </div>
+      <div class="tab">
+        Login Info:
+        <p>
+          <input
+            placeholder="Username..."
+            oninput="this.className = ''"
+            name="uname"
+          />
+        </p>
+        <p>
+          <input
+            placeholder="Password..."
+            oninput="this.className = ''"
+            name="pword"
+            type="password"
+          />
+        </p>
+      </div>
+      <div style="overflow: auto">
+        <div style="float: right">
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="/js/multi-steps.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
