@@ -83,7 +83,7 @@
         <h1
           class="text-[#020330] text-[32px] font-bold mb-3 max-sm:px-8 max-sm:mb-1 max-sm:text-[28px]"
         >
-          Application for Investors
+          Application for Partnership
         </h1>
         <p class="text-[20px] max-sm:px-11">
           Recieve investments to help scale your projects with bbshark
@@ -172,82 +172,138 @@
           <h3 class="title">Product or Service?</h3>
           <div class="py-5">
             <div class="flex gap-5 py-3">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Product</label>
+              <input id="Product" name="type" type="radio" class="w-[19px]" />
+              <label for="Product" class="text-[18px]">Product</label>
             </div>
             <div class="flex gap-5 py-3">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Service</label>
+              <input id="Service" name="type" type="radio" class="w-[19px]" />
+              <label for="Service" class="text-[18px]">Service</label>
             </div>
           </div>
           <h3 class="title pb-7">
             Which category best describes your Business?
           </h3>
           <div class="flex flex-wrap">
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Food & Beverage</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input id="food" type="radio" name="category" class="w-[19px]" />
+              <label for="food" class="text-[18px]">Food & Beverage</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Technology</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="technology"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="technology" class="text-[18px]">Technology</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">App/ Website</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="App-Website"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="App-Website" class="text-[18px]">App/ Website</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Housewares/ Home Design</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="Housewares"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="Housewares" class="text-[18px]"
+                >Housewares/ Home Design</label
+              >
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]"
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="Health"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="Health" class="text-[18px]"
                 >Health/ Wellness/ Nutrition</label
               >
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Fitness</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="Fitness"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="Fitness" class="text-[18px]">Fitness</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Sports</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="Sports"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="Sports" class="text-[18px]">Sports</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Beauty</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="Beauty"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="Beauty" class="text-[18px]">Beauty</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Clothing/ Fashion</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="Clothing"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="Clothing" class="text-[18px]"
+                >Clothing/ Fashion</label
+              >
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Toys/ Games</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input id="Toys" type="radio" name="category" class="w-[19px]" />
+              <label for="Toys" class="text-[18px]">Toys/ Games</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Pets</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input id="Pets" type="radio" name="category" class="w-[19px]" />
+              <label for="Pets" class="text-[18px]">Pets</label>
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]"
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input
+                id="Entertainment"
+                type="radio"
+                name="category"
+                class="w-[19px]"
+              />
+              <label for="Entertainment" class="text-[18px]"
                 >Entertainment/ Experiment</label
               >
             </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px]" />
-              <label for="" class="text-[18px]">Holiday</label>
-            </div>
-            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
-              <input type="radio" class="w-[19px] max-sm:w-[11.5%]" />
-              <label for="" class="text-[18px]">Other</label>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
               <input
-                type="text"
-                placeholder="Please Specify"
-                class="border-2 border-slate-200 rounded px-4 py-2 w-[71%] max-sm:w-full max-sm:pl-[46px] max-sm:pb-[46px]"
+                id="Holiday"
+                type="radio"
+                name="category"
+                class="w-[19px]"
               />
+              <label for="Holiday" class="text-[18px]">Holiday</label>
+            </div>
+            <div class="flex gap-5 py-2 w-2/4 pb-5">
+              <input id="other" type="radio" name="category" class="w-[19px]" />
+              <div class="flex items-center gap-4">
+                <label for="other" class="text-[18px]">Other</label>
+                <input
+                  type="text"
+                  placeholder="Please Specify"
+                  class="border-2 border-slate-200 rounded px-4 py-2 w-[71%]"
+                />
+              </div>
             </div>
           </div>
         </div>
