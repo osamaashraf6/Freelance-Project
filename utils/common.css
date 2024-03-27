@@ -71,3 +71,7 @@ swiper-container {
 .episode-link:hover .episode-dropdown {
   visibility: visible;
 }
+
+.jockey-one {
+  font-family: "Jockey One", sans-serif;
+}
