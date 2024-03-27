@@ -20,7 +20,7 @@
                 >Discover <i class="fas fa-angle-down"></i
               ></a>
               <ul
-                class="invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
+                class="z-50 invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
               >
                 <li class="border-b border-slate-100 pb-2 w-[94%]">
                   <a href="" class="text-[18px]">Investment Opportunities</a>
@@ -80,10 +80,10 @@
     <section id="form-section">
       <!-- Start common heading -->
       <div class="pt-12 text-center">
-        <h1 class="text-[#020330] text-[32px] font-bold">
+        <h1 class="text-[#020330] text-[32px] font-bold mb-3">
           Business Application
         </h1>
-        <p class="text-[18px] mb-5">
+        <p class="text-[20px]">
           Recieve investments to help scale your projects with bbshark
         </p>
       </div>
@@ -92,13 +92,13 @@
       <form id="regForm" class="relative">
         <!-- Circles which indicates the steps of the form: -->
         <div
-          class="absolute left-[50%] translate-x-[-50%] flex w-fit items-center justify-center gap-5 rounded-full border-2 border-[#eee] p-4"
+          class="absolute left-[50%] translate-x-[-50%] flex w-fit items-center justify-center gap-28 rounded-full border-2 border-[#eee] px-10 py-4"
         >
           <button type="button" id="prevBtn" onclick="nextPrev(-1)">
             <img src="/assets/icons/left-angle.svg" width="15px" alt="" />
             <span class="text-2xl font-bold">Go Back</span>
           </button>
-          <div class="flex items-center gap-1">
+          <div class="flex items-center gap-3">
             <span class="step"></span>
             <span class="step"></span>
             <span class="step"></span>
@@ -162,7 +162,7 @@
         <!-- ==================================================== -->
         <div class="tab">
           <div
-            class="bi-title gap-5 text-[25px] flex justify-center font-bold mb-[16px]"
+            class="bi-title gap-5 text-2xl flex justify-center font-bold mb-[16px] pt-[17px]"
           >
             <img src="/assets/icons/shopping.svg" alt="" />
             Business Information
@@ -253,12 +253,12 @@
 
         <div class="tab">
           <div
-            class="bi-title gap-5 text-[25px] flex justify-center font-bold mb-[16px]"
+            class="bi-title gap-5 text-2xl flex justify-center font-bold mb-[16px] pt-[17px]"
           >
             <img src="/assets/icons/shopping.svg" alt="" />
             Business Information
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >Annual Revenue</label
             >
@@ -268,7 +268,7 @@
               class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
             />
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >Number of Years Company has been operating</label
             >
@@ -278,7 +278,7 @@
               class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
             />
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >Number of Employees in Your Company
             </label>
@@ -288,7 +288,7 @@
               class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
             />
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >Are you applying with any collaborators</label
             >
@@ -298,7 +298,7 @@
               class="w-full h-[119px] border-2 border-slate-100 rounded pl-[15px] text-[18px] pt-5"
             ></textarea>
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >How much money would you like to ask for to grow your
               business</label
@@ -309,7 +309,7 @@
               class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
             />
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >How much equity in exchange of the required investment are
               willing to offer the shark?</label
@@ -320,7 +320,7 @@
               class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
             />
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >Please provide a brief non-confidential description of your
               business or product.</label
@@ -331,7 +331,7 @@
               class="w-full h-[119px] border-2 border-slate-100 rounded pl-[15px] text-[18px] pt-5"
             ></textarea>
           </div>
-          <div class="">
+          <div class="pb-2">
             <label class="text-[24px] font-bold block mb-[16px]"
               >Please upload a photo of your business or product if available
               (.jpg)</label
@@ -360,12 +360,12 @@
 
         <div class="tab">
           <div
-            class="bi-title gap-5 text-[25px] flex justify-center font-bold mb-[16px]"
+            class="bi-title gap-5 text-2xl flex justify-center font-bold mb-[16px] pt-[17px]"
           >
             <img src="/assets/icons/shopping.svg" alt="" />
             Business Information
           </div>
-          <div class="">
+          <div class="pb-8">
             <label class="text-[24px] font-bold block mb-[16px] leading-8">
               Upload a new elevator pitch video of you in *Arabic * not longer
               than 2 mins. We want to get sense of who you are and what your
@@ -374,17 +374,17 @@
             <input
               type="text"
               placeholder="add link to youtube, vimeo or dropbox"
-              class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+              class="w-full h-[45px] border-2 border-slate-100 rounded p-[30px] text-[18px]"
             />
           </div>
-          <div class="">
+          <div class="pb-7">
             <label class="text-[24px] font-bold block mb-[16px] leading-8">
               How did you hear about us?</label
             >
             <input
               type="text"
               placeholder="how did you hear about us?"
-              class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+              class="w-full h-[45px] border-2 border-slate-100 rounded p-[30px] text-[18px]"
             />
             <div class="pl-[29px] flex gap-2 pt-4">
               <input type="checkbox" class="w-[21px]" />
@@ -394,7 +394,7 @@
               >
             </div>
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col mb-10">
             <label class="text-[24px] font-bold block mb-[16px] leading-8">
               Digital Signature</label
             >
