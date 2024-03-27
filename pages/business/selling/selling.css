@@ -1,48 +1,39 @@
-/* Start dropdown menu */
-.discover-link:hover .discover-dropdown {
-  visibility: visible;
-}
-.episode-link:hover .episode-dropdown {
-  visibility: visible;
-}
-
 /*  */
 .jockey-one-regular {
   font-family: "Jockey One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-/* Start multi step form */
 
-.container .form-outer {
+#regForm {
+  background-color: #ffffff;
+  margin: 0 auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+input {
+  padding: 10px;
   width: 100%;
-  overflow: hidden;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
 }
-.container .form-outer form {
-  display: flex;
-  width: 400%;
-}
-.form-outer form .page {
-  width: 25%;
-  transition: margin-left 0.3s ease-in-out;
-}
-.form-outer form .page .title {
-  text-align: left;
-  font-size: 25px;
-  font-weight: 500;
-}
-.form-outer form .page .field {
+
+.field {
   height: 45px;
   margin: 45px 0;
   display: flex;
   position: relative;
 }
-form .page .field .label {
+.field .label {
   position: absolute;
   top: -30px;
   font-weight: 500;
 }
-form .page .field input {
+.field input {
   height: 100%;
   width: 100%;
   border: 1px solid lightgrey;
@@ -50,22 +41,26 @@ form .page .field input {
   padding-left: 15px;
   font-size: 18px;
 }
-form .page .field select {
-  width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: 500;
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  margin-bottom: 4rem;
 }
-form .page .field .next {
+
+#prevBtn {
+  background-color: none;
+  color: #000;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#nextBtn {
   width: 192px;
-  height: 52px;
-}
-form .page .field .next,
-form .page .field .submit,
-.nextt {
+  height: 56px;
   border: none;
   background: rgba(3, 4, 94, 1);
-  margin-top: -20px;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
@@ -74,70 +69,25 @@ form .page .field .submit,
   text-transform: uppercase;
   transition: 0.5s ease;
 }
-form .page .field .next:hover,
-form .page .field .submit:hover {
-  background: #000;
-}
-form .page .btns button {
-  margin-top: -20px !important;
-}
-form .page .btns button.prev {
-  margin-right: 3px;
-  font-size: 17px;
-}
-form .page .btns button.next {
-  margin-left: 3px;
-}
-.container .progress-bar {
-  display: flex;
-  margin: 40px 0;
-  user-select: none;
-}
-.container .progress-bar .step {
-  text-align: center;
-  width: 34px;
-  position: relative;
-}
 
-.progress-bar .step .bullet {
-  height: 12px;
-  width: 12px;
-  border: 2px solid #000;
-  display: inline-block;
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
   border-radius: 50%;
-  position: relative;
-  transition: 0.2s;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 25px;
-}
-.progress-bar .step .bullet.active {
-  border-color: #80e580;
-  background: #80e580;
+  display: inline-block;
+  opacity: 0.5;
 }
 
-.progress-bar .step .bullet:before,
-.progress-bar .step .bullet:after {
-  position: absolute;
-  content: "";
-  bottom: 3px;
-  right: -24px;
-  height: 3px;
-  width: 24px;
-  background: #262626;
+.step.active {
+  background-color: #53ffb8;
+  opacity: 1;
 }
-.progress-bar .step .bullet.active:after {
-  background: #80e580;
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: animate 0.3s linear forwards;
-}
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-.progress-bar .step:last-child .bullet:before,
-.progress-bar .step:last-child .bullet:after {
-  display: none;
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #53ffb8;
 }
