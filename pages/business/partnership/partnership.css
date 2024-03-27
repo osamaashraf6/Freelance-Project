@@ -96,6 +96,12 @@ input {
 }
 /*  */
 @media (max-width: 640px) {
+  .category-group {
+    flex-direction: column;
+  }
+  .category-group > div {
+    width: 100%;
+  }
   #regForm {
     padding: 19px 0;
     min-width: 337px;
@@ -107,5 +113,4 @@ input {
   .title {
     font-size: 20px;
   }
-
 }

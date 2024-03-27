@@ -94,3 +94,17 @@ input {
   font-weight: 700;
   font-size: 24px;
 }
+
+@media screen and (max-width: 600px) {
+  .category-group {
+    flex-direction: column;
+  }
+  .category-group > div {
+    width: 100%;
+  }
+
+  #regForm {
+    padding: 20px 0;
+    min-width: 337px;
+  }
+}
