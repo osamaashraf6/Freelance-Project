@@ -94,3 +94,18 @@ input {
   font-weight: 700;
   font-size: 24px;
 }
+/*  */
+@media (max-width: 640px) {
+  #regForm {
+    padding: 19px 0;
+    min-width: 337px;
+  }
+
+  #prevBtn {
+    width: 112px;
+  }
+  .title {
+    font-size: 20px;
+  }
+
+}

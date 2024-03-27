@@ -20,7 +20,7 @@
                 >Discover <i class="fas fa-angle-down"></i
               ></a>
               <ul
-                class="invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
+                class="z-50 invisible absolute w-[286px] h-[173px] pt-[26px] pb-[43px] px-[25px] top-[67px] left-[-9px] rounded flex flex-col gap-4 shadow-lg bg-white discover-dropdown"
               >
                 <li class="border-b border-slate-100 pb-2 w-[94%]">
                   <a href="" class="text-[18px]">Investment Opportunities</a>
@@ -80,10 +80,12 @@
     <section id="form-section">
       <!-- Start common heading -->
       <div class="pt-12 text-center">
-        <h1 class="text-[#020330] text-[32px] font-bold mb-3">
-          Business Application
+        <h1
+          class="text-[#020330] text-[32px] font-bold mb-3 max-sm:px-8 max-sm:mb-1 max-sm:text-[28px]"
+        >
+          Application for Investors
         </h1>
-        <p class="text-[20px]">
+        <p class="text-[20px] max-sm:px-11">
           Recieve investments to help scale your projects with bbshark
         </p>
       </div>
@@ -92,7 +94,7 @@
       <form id="regForm" class="relative">
         <!-- Circles which indicates the steps of the form: -->
         <div
-          class="absolute left-[50%] translate-x-[-50%] flex w-fit items-center justify-center gap-28 rounded-full border-2 border-[#eee] px-10 py-4"
+          class="max-sm:gap-16 absolute left-[50%] translate-x-[-50%] flex w-fit items-center justify-center gap-28 rounded-full border-2 border-[#eee] px-10 py-4 max-sm:py-[14px]"
         >
           <button type="button" id="prevBtn" onclick="nextPrev(-1)">
             <img src="/assets/icons/left-angle.svg" width="15px" alt="" />
@@ -105,7 +107,7 @@
             <span class="step"></span>
           </div>
         </div>
-        <div class="mt-20"></div>
+        <div class="mt-20 max-sm:mt-[4.5rem]"></div>
         <!--  ========================================================== -->
         <div class="tab">
           <div class="flex justify-center">
@@ -182,84 +184,85 @@
             Which category best describes your Business?
           </h3>
           <div class="flex flex-wrap">
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Food & Beverage</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Technology</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">App/ Website</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Housewares/ Home Design</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]"
                 >Health/ Wellness/ Nutrition</label
               >
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Fitness</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Sports</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Beauty</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Clothing/ Fashion</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Toys/ Games</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Pets</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]"
                 >Entertainment/ Experiment</label
               >
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
               <input type="radio" class="w-[19px]" />
               <label for="" class="text-[18px]">Holiday</label>
             </div>
-            <div class="flex gap-5 py-2 w-2/4 pb-5">
-              <input type="radio" class="w-[19px]" />
+            <div class="flex gap-5 max-sm:gap-7 py-2 w-2/4 max-sm:w-full pb-5">
+              <input type="radio" class="w-[19px] max-sm:w-[11.5%]" />
               <label for="" class="text-[18px]">Other</label>
               <input
                 type="text"
                 placeholder="Please Specify"
-                class="border-2 border-slate-200 rounded px-4 py-2 w-[71%]"
+                class="border-2 border-slate-200 rounded px-4 py-2 w-[71%] max-sm:w-full max-sm:pl-[46px] max-sm:pb-[46px]"
               />
             </div>
           </div>
         </div>
         <!-- ==================================================== -->
 
-        <div class="tab">
+        <div class="tab max-sm:mb-12 max-sm:text-xl">
           <div
-            class="bi-title gap-5 text-[25px] flex justify-center font-bold mb-[16px]"
+            class="bi-title gap-5 text-2xl flex justify-center font-bold mb-[16px] pt-[17px]"
           >
             <img src="/assets/icons/shopping.svg" alt="" />
             Business Information
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >Annual Revenue</label
             >
             <input
@@ -269,17 +272,19 @@
             />
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >Number of Years Company has been operating</label
             >
             <input
               type="text"
               placeholder="Number of years company has been operating"
-              class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+              class="w-full h-[45px] border-2 border-slate-100 rounded pl-[15px] text-[18px] max-sm:pb-12 max-sm:h-fit max-sm:placeholder:w-full"
             />
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >Number of Employees in Your Company
             </label>
             <input
@@ -289,7 +294,8 @@
             />
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >Please provide a brief non-confidential description of your
               business or product.</label
             >
@@ -300,7 +306,8 @@
             ></textarea>
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >Specify the role the partner would fill or what assets you need
               them to offer</label
             >
@@ -311,7 +318,8 @@
             ></textarea>
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >What experience do you require the partner to have?</label
             >
             <textarea
@@ -321,22 +329,24 @@
             ></textarea>
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >Type of position you’d like the partner to fill
             </label>
             <div class="flex gap-5">
               <span
-                class="flex justify-center items-center w-[280px] h-[48px] rounded-full text-2xl border-[3px] border-green-300 text-green-700"
+                class="flex justify-center items-center w-[280px] h-[48px] max-sm:h-[40px] max-sm:text-[16px] rounded-full text-2xl border-[3px] border-green-300 text-green-700"
                 >Full Time</span
               >
               <span
-                class="flex justify-center items-center w-[280px] h-[48px] rounded-full text-2xl border-[3px] border-slate-300"
+                class="flex justify-center items-center w-[280px] h-[48px] max-sm:h-[40px] max-sm:text-[16px] rounded-full text-2xl border-[3px] border-slate-300"
                 >Part Time</span
               >
             </div>
           </div>
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >How much equity are you willing to offer the partner in exchange
               for their assets/ work/ skills/ experience ?</label
             >
@@ -348,13 +358,14 @@
           </div>
 
           <div class="pb-4">
-            <label class="text-[24px] font-bold block mb-[16px]"
+            <label
+              class="text-[24px] font-bold block mb-[16px] max-sm:text-[18px]"
               >Please upload a photo of your business or product if available
               (.jpg)</label
             >
             <div class="flex h-[50px]">
               <label
-                class="w-[40%] h-full border-2 flex items-center border-slate-100 rounded pl-[15px] text-[18px] text-slate-300"
+                class="w-[40%] max-sm:w-2/4 h-full border-2 flex items-center border-slate-100 rounded pl-[15px] text-[18px] text-slate-300"
                 for="file"
                 >Choose File</label
               >
@@ -365,7 +376,7 @@
                 id="file"
               />
               <button
-                class="w-[20%] h-full text-[18px] bg-[#55FFB8] font-bold text-[#03045E]"
+                class="w-[20%] max-sm:w-2/4 h-full text-[18px] bg-[#55FFB8] font-bold text-[#03045E]"
               >
                 Upload
               </button>
@@ -382,7 +393,9 @@
             Business Information
           </div>
           <div class="pb-8">
-            <label class="text-[24px] font-bold block mb-[16px] leading-8">
+            <label
+              class="text-[24px] font-bold block mb-[16px] leading-8 max-sm:text-xl"
+            >
               Upload a new elevator pitch video of you in *Arabic * not longer
               than 2 mins. We want to get sense of who you are and what your
               company's all about before we meet you at auditions!</label
@@ -394,7 +407,9 @@
             />
           </div>
           <div class="pb-7">
-            <label class="text-[24px] font-bold block mb-[16px] leading-8">
+            <label
+              class="text-[24px] font-bold block mb-[16px] leading-8 max-sm:text-xl"
+            >
               How did you hear about us?</label
             >
             <input
@@ -402,7 +417,7 @@
               placeholder="how did you hear about us?"
               class="w-full h-[45px] border-2 border-slate-100 rounded p-[30px] text-[18px]"
             />
-            <div class="pl-[29px] flex gap-2 pt-4">
+            <div class="pl-[29px] flex gap-2 pt-4 max-sm:hidden">
               <input type="checkbox" class="w-[21px]" />
               <label for="" class="text-xl"
                 >I agree to BabySharks
@@ -411,25 +426,29 @@
             </div>
           </div>
           <div class="flex flex-col mb-10">
-            <label class="text-[24px] font-bold block mb-[16px] leading-8">
+            <label
+              class="text-[24px] font-bold block mb-[16px] leading-8 max-sm:text-xl"
+            >
               Digital Signature</label
             >
             <input
               type="text"
               placeholder=""
-              class="w-[30%] h-[60px] border-2 border-slate-100 rounded pl-[15px] text-[18px] mb-14"
+              class="w-[30%] max-sm:w-full h-[60px] border-2 border-slate-100 rounded pl-[15px] text-[18px] mb-14"
             />
             <input
               type="text"
               placeholder=""
-              class="w-[30%] h-[60px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
+              class="w-[30%] max-sm:w-full h-[60px] border-2 border-slate-100 rounded pl-[15px] text-[18px]"
             />
           </div>
           <div class="flex flex-col">
-            <h3 class="text-[24px] font-bold block mb-[16px] leading-8">
+            <h3
+              class="text-[24px] font-bold block mb-[16px] leading-8 max-sm:text-xl"
+            >
               Welcome to BabySharks Application.
             </h3>
-            <p class="text-[18px]">
+            <p class="text-[18px] max-sm:text-[14px]">
               Dui tempus in pellentesque maecenas et nunc integer iaculis a.
               Risus eget sed nunc lorem sed et. Velit in sed convallis id
               sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper tellus
@@ -438,14 +457,18 @@
               sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper
             </p>
             <ul class="flex flex-col gap-5 py-5">
-              <li class="flex gap-5 text-[18px] font-semibold">
+              <li
+                class="flex gap-5 text-[18px] max-sm:text-[14px] font-semibold"
+              >
                 <span
                   class="w-[22px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
                   ><i class="fas fa-check"></i
                 ></span>
                 You must be 18 years of age or older.
               </li>
-              <li class="flex gap-5 text-[18px] font-semibold">
+              <li
+                class="flex gap-5 text-[18px] max-sm:text-[14px] font-semibold"
+              >
                 <span
                   class="w-[22px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
                   ><i class="fas fa-check"></i
@@ -453,7 +476,9 @@
                 You must be legally present in egypt during the shooting of the
                 episode
               </li>
-              <li class="flex gap-5 text-[18px] font-semibold">
+              <li
+                class="flex gap-5 text-[18px] max-sm:text-[14px] font-semibold"
+              >
                 <span
                   class="w-[71px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
                   ><i class="fas fa-check"></i
@@ -468,7 +493,9 @@
                   auctor enim diam.</span
                 >
               </li>
-              <li class="flex gap-5 text-[18px] font-semibold">
+              <li
+                class="flex gap-5 text-[18px] max-sm:text-[14px] font-semibold"
+              >
                 <span
                   class="w-[22px] h-[22px] rounded-full flex justify-center items-center bg-[#13F095] text-xs text-white"
                   ><i class="fas fa-check"></i
@@ -477,13 +504,13 @@
                 were not absolved)
               </li>
             </ul>
-            <p class="text-[18px] pb-3">
+            <p class="text-[18px] max-sm:text-[16px] pb-3">
               Dui tempus in pellentesque maecenas et nunc integer iaculis a.
               Risus eget sed nunc lorem sed et. Velit in sed convallis id
               sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper tellus
               auctor enim diam.
             </p>
-            <p class="text-[18px]">
+            <p class="text-[18px] max-sm:text-[16px]">
               Dui tempus in pellentesque maecenas et nunc integer iaculis a.
               Risus eget sed nunc lorem sed et. Velit in sed convallis id
               sapien. Ipsum nulla mauris aliquet lectus. Ullamcorper tellus
@@ -506,25 +533,27 @@
     <!--  -->
     <div
       id="popup"
-      class="hidden absolute text-center text-[#0F0F45] w-[1045px] h-[530px] shadow-lg p-7 left-[50%] top-[55%] translate-x-[-50%] translate-y-[-50%] flex-col gap-2"
+      class="hidden absolute text-center text-[#0F0F45] w-[1045px] h-[530px] max-sm:w-full max-sm:h-full max-sm:p-0 shadow-lg max-sm:shadow-none p-7 left-[50%] top-[55%] translate-x-[-50%] translate-y-[-50%] flex-col gap-2"
     >
-      <div class="text-right">
+      <div class="text-right max-sm:hidden">
         <button class="text-5xl">&times;</button>
       </div>
-      <div class="flex items-center justify-center gap-2 h-[156px]">
+      <div
+        class="flex items-center justify-center gap-2 h-[156px] max-sm:h-fit max-sm:flex-col"
+      >
         <img src="/assets/icons/congrats.svg" alt="" />
         <h1 class="jockey-one-regular text-[96px]">Huzzah!</h1>
       </div>
-      <h3 class="jockey-one-regular text-[36px]">
+      <h3 class="jockey-one-regular text-[36px] max-sm:text-xl">
         Thank you for your submission
       </h3>
-      <p class="text-2xl">
+      <p class="text-2xl max-sm:text-xl max-sm:mb-[50%]">
         we will review your application and update you in 4-7 business days
       </p>
-      <div class="m-auto">
+      <div class="m-auto max-sm:pb-5">
         <a
           href="/pages/home/home.html"
-          class="jockey-one-regular text-[32px] w-[440px] h-[65px] p-2 bg-[#0F0F45] text-white block"
+          class="jockey-one-regular text-[32px] w-[440px] h-[65px] max-sm:h-[60px] max-sm:w-[243px] p-2 bg-[#0F0F45] text-white block"
           >Go to Home
         </a>
       </div>
